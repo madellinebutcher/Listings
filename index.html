@@ -37,15 +37,13 @@
 </section>
 <section>
     <form onsubmit="app.controllers.carController.addCar(event)">
-        <input type="url" name="img" placeholder="image">
-        <input type="number" name="year" placeholder="year built">
+        <input type="text" name="make" placeholder="make">
+        <input type="text" name="model" placeholder="model">
+        <input type="number" name="year" placeholder="year">
         <input type="number" name="price" placeholder="price">
-        <input type="number" name="levels" placeholder="levels">
-        <input type="number" name="bedrooms" placeholder="number of bedrooms">
-        <input type="number" name="bathrooms" placeholder="number of bathrooms">
-        <input type="text" name="description" placeholder="describe your home">
+        <input type="url" name="img" placeholder="Image">
         <button type="submit">SUBMIT</button>
-    </form>
+      </form>
 </section>
     <section id="cars"></section>
 
@@ -54,13 +52,11 @@
     </section>
     <section>
         <form onsubmit="app.controllers.jobController.addJob(event)">
-            <input type="url" name="img" placeholder="image">
-            <input type="number" name="year" placeholder="year built">
-            <input type="number" name="price" placeholder="price">
-            <input type="number" name="levels" placeholder="levels">
-            <input type="number" name="bedrooms" placeholder="number of bedrooms">
-            <input type="number" name="bathrooms" placeholder="number of bathrooms">
-            <input type="text" name="description" placeholder="describe your home">
+            <input type="text" name="company" placeholder="company">
+            <input type="text" name="job title" placeholder="job title">
+            <input type="number" name="hours" placeholder="hours">
+            <input type="number" name="rate" placeholder="rate">
+            <input type="text" name="description" placeholder="job description">
             <button type="submit">SUBMIT</button>
         </form>
     </section>
