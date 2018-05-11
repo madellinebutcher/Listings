@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <h1>House Listing</h1>
+    </section>
+    <section>
+        <form onsubmit="app.controllers.houseController.addHouse(event)">
+            <input type="url" name="img" placeholder="image">
+            <input type="number" name="year" placeholder="year built">
+            <input type="number" name="price" placeholder="price">
+            <input type="number" name="levels" placeholder="levels">
+            <input type="number" name="bedrooms" placeholder="number of bedrooms">
+            <input type="number" name="bathrooms" placeholder="number of bathrooms">
+            <input type="text" name="description" placeholder="describe your home">
+            <button type="submit">SUBMIT</button>
+        </form>
+    </section>
+    <section id="houses">
+        <!-- <div>
+        <img src="//placehold.it/100x100" alt="">
+        <h3>Location: </h3>
+        <h3>Year: </h3>
+        <h3>Price: </h3>
+      </div> -->
+    </section>
+    <section>
+    <h1>Car Listing</h1>
+</section>
+<section>
+    <form onsubmit="app.controllers.carController.addCar(event)">
+        <input type="url" name="img" placeholder="image">
+        <input type="number" name="year" placeholder="year built">
+        <input type="number" name="price" placeholder="price">
+        <input type="number" name="levels" placeholder="levels">
+        <input type="number" name="bedrooms" placeholder="number of bedrooms">
+        <input type="number" name="bathrooms" placeholder="number of bathrooms">
+        <input type="text" name="description" placeholder="describe your home">
+        <button type="submit">SUBMIT</button>
+    </form>
+</section>
+    <section id="cars"></section>
+
+    <section>
+        <h1>Job Listing</h1>
+    </section>
+    <section>
+        <form onsubmit="app.controllers.jobController.addJob(event)">
+            <input type="url" name="img" placeholder="image">
+            <input type="number" name="year" placeholder="year built">
+            <input type="number" name="price" placeholder="price">
+            <input type="number" name="levels" placeholder="levels">
+            <input type="number" name="bedrooms" placeholder="number of bedrooms">
+            <input type="number" name="bathrooms" placeholder="number of bathrooms">
+            <input type="text" name="description" placeholder="describe your home">
+            <button type="submit">SUBMIT</button>
+        </form>
+    </section>
+
+    <section id="jobs"></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="app/HouseService.js"></script>
+    <script src="app/CarsService.js"></script>
+    <script src="app/JobService.js"></script>
+
+    <script src="app/HouseController.js"></script>
+    <script src="app/CarsController.js"></script>
+    <script src="app/JobController.js"></script>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
