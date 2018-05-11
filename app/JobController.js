@@ -9,10 +9,10 @@ function JobController(){
             template += `
             <div>
         
-            <h3>Company:${job.company}</h3>
-            <h3>Job Title:${job.jobTitle}</h3>
-            <h3>Hours:${job.hours}</h3>
-            <h3>Rate:$${job.rate} </h3><button onclick="app.controllers.jobController.increaseRate('${job._id}', ${job.rate})">Increase Rate</button>
+            <h3>Company: ${job.company}</h3>
+            <h3>Job Title: ${job.jobTitle}</h3>
+            <h3>Hours: ${job.hours} HRS</h3>
+            <h3>Rate: $${job.rate} </h3><button onclick="app.controllers.jobController.increaseRate('${job._id}', ${job.rate})">Increase Rate</button>
             <p>${job.description}</p>
             <button onclick="app.controllers.jobController.deleteJob('${job._id}')">Delete</button>
             
